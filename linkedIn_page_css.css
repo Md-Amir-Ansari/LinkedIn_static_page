@@ -1,0 +1,572 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #F4F2EE;
+}
+
+    /*==================================== header ============================================*/
+
+nav .header{
+    height: 52px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.3rem 4rem;
+    box-shadow: 1px 1px 2px rgb(112, 112, 112);
+}
+
+nav .header .header-left, nav .header .header-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav .header .header-left{
+    padding-left: 3rem;
+    display: flex;
+    gap: 0.7rem;
+}
+
+nav .header .logo img{
+    height: 34px;
+    width: 34px;
+    cursor: pointer;
+}
+
+nav .header .header-left .search-box{
+    background-color: #EDF3F8;
+    height: 34px;
+    width: 100%;
+    padding: 0.5rem 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.2rem;
+}
+
+nav .header .header-left .search-box input[type='search']{
+    width: 15rem;
+    border: none;
+    background: transparent;
+}
+
+nav .header .header-right .nav-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    color: #666666;
+}
+
+nav .header .header-right{
+    padding-right: 8%;
+}
+
+
+nav .header .header-left{
+    padding-left: 5%;
+}
+
+nav .header .header-right .nav-icon:hover{
+    color: #000;
+    cursor: pointer;
+}
+
+nav .header .header-right .nav-text{
+    font-size: 0.8rem;
+}
+
+.nav-icon a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    width: 10rem;
+    text-align: center;
+    color: black;
+}
+
+    /*================================================= left-panel =============================================*/
+
+.container{
+   display: grid;
+   grid-template-columns: 20% 45% 25%;
+   gap: 1.5rem;
+   width: 85%;
+   margin-left: 8.3rem ;
+   margin-top: 2rem;
+}
+
+left-panel .left-side{
+    background-color: #fff;
+    width: 100%;
+    height: 55vh;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.left-side .top{
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(82, 92, 105);
+    position: absolute;
+}
+.left-side img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 10%;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
+.left-side .text{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.left-side .text small{
+    color: #666666;
+}
+
+.left-side .view{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 3%;
+}
+
+.left-side small{
+    padding-left: 7px;
+    color: #666666;
+}
+
+.left-side .views{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+}
+
+.left-side a{
+    color: #0A66C2;
+    text-decoration: none;
+    font-size: large;
+}
+
+.left-side .premium small{
+    padding-top: 1rem; 
+}
+
+.left-side .premium h5{
+    margin: 4px 7px;
+}
+
+.left-side .bookmark{
+    position: relative;
+    display: flex;
+    padding: 10px;
+    gap: 0.7rem;
+}
+
+left-panel  .recent{
+    background-color: #fff;
+    width: 100%;
+    height: 52vh;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+left-panel .recent .tensorflow, 
+left-panel .recent .group,
+left-panel .recent .follow{
+    margin: 1rem;
+}
+
+.recent .tensorflow .flow{
+    padding-top: 0.8rem;
+    color: #666666;
+}
+
+.recent .group h5, .recent .follow h5{
+    color: #0A66C2;
+    padding-bottom: 0.5rem;
+}
+
+.recent .follow h4{
+    padding-top: 0.7rem;
+    color: #666666;
+}
+
+.recent  h4{
+    padding-top: 0.7rem;
+    padding: 0.2rem;
+    color: #666666;
+}
+
+/*=============================== middle Panel  ==========================================*/
+
+.container2{
+    background-color: #ffffff; 
+    border-radius: 0.8rem;  
+    height: 116px; 
+}
+
+main .post{
+    display: flex;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+main .post img{
+    border-radius: 50%;
+    height: 48px;
+}
+
+main .post input{
+    width: 90%;
+    border-radius: 2rem;
+    padding-left: 1rem;
+}
+
+main .media{
+    display: flex;
+    justify-content: space-around;
+    margin: 1.3rem 0rem;
+} 
+
+main .media h5{
+    color: #666666;
+}
+
+main .media .photo{
+    display: flex;
+    gap: 0.5rem;
+    color: #378FE9;
+} 
+
+main .media .video{
+    display: flex;
+    gap: 0.5rem;
+    color: rgb(92, 206, 92);
+} 
+
+main .media .event{
+    display: flex;
+    gap: 0.5rem;
+    color: #C37D16;
+} 
+
+main .media .article{
+    display: flex;
+    gap: 0.5rem;
+    color: #E06847;
+} 
+
+.container2 .myntra{
+    background-color: #ffffff; 
+    border-radius: 0.8rem;  
+    height: 480px; 
+    margin-top: 2.5rem;
+    display: flex;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.container2 .myntra .myntra_logo .logo{
+   height: 70px;
+   width: 70px;
+   border-radius: 50%;
+}
+
+.container2 .myntra .fashion {
+    margin-top: 10px;
+    position: absolute;
+    margin-left: 4rem;
+}
+
+.container2 .myntra .fashion i{
+    position: absolute;
+    right: -23rem;
+    top: 0rem
+}
+
+.container2 .myntra .fashion h6{
+    color: #666666;
+}
+
+.container2 .myntra .poster {
+    position: absolute;
+    margin-top: 5rem;
+    margin-left: -0.5rem;
+}
+
+.container2 .myntra .poster #rcb2{
+    width: 36.2rem;
+}
+
+.container2 .myntra .poster #like{
+    height: 1rem;
+    margin: 0.3rem;
+}
+
+.container2 .myntra .poster h5{
+    color: #666666;
+    margin-top: -1.5rem;
+    margin-left: 5.5rem;
+}
+
+.container2 .myntra .poster hr{
+    margin-top: 0.5rem;
+}
+
+.container2 .myntra .send {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    gap: 10px ;
+}
+
+.container2 .myntra .send #save{
+    height: 1rem;
+}
+
+.container2 .myntra .send h4{
+    color: #666666;
+    font-weight: 500;
+}
+
+.container2 .dbs{
+    background-color: #ffffff; 
+    border-radius: 0.8rem;  
+    height: 570px; 
+    margin-top: 2.5rem;
+    display: flex;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.container2 .dbs .dbs_logo .logo2{
+    height: 70px;
+    width: 70px;
+}
+ 
+.container2 .dbs .dbs2 {
+     margin-top: 10px;
+     position: absolute;
+     margin-left: 5rem;
+}
+ 
+.container2 .dbs .dbs2 i{
+     position: absolute;
+     right: -17rem;
+     top: 0rem
+}
+ 
+.container2 .dbs .dbs2 h6{
+     color: #666666;
+}
+
+.container2 .dbs .text{
+    margin-top: 4rem;
+    margin-left: -4rem;
+    margin-bottom: 4rem;
+}
+
+.container2 .dbs .text p{
+    padding-bottom: 1rem;
+}
+ 
+.container2 .dbs .text #like2{
+    height: 1rem;
+    margin: 0.3rem;
+}
+
+.container2 .dbs .send2 {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    gap: 10px ;
+}
+
+.container2 .dbs .send2 #save2{
+    height: 1rem;
+}
+ 
+.container2 .dbs .send2 h4{
+    color: #666666;
+    font-weight: 500;
+}
+
+/*==================================================== right Panel ================================================*/
+
+.right_side{
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    height: 300px;
+}
+
+.right_side .news{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.right_side h4{
+    font-weight: 600;
+}
+
+.right_side .list{
+    margin: 1.5rem;
+    padding: 1rem;
+}
+
+.right_side .list li{
+    font-weight: 700;
+    padding: 0.2rem;
+}
+
+.right_side .list small{
+    color: #666666;
+}
+
+.most{
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    height: 210px;
+}
+
+.most .news2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    padding-top: 1rem;
+}
+
+.most h4{
+    font-weight: 600;
+}
+
+.most .list2{
+    margin: 1.5rem;
+    padding: 1rem;
+}
+
+.most .list2 li{
+    font-weight: 700;
+    padding: 0.2rem;
+}
+
+.most .list2 small{
+    color: #666666;
+}
+
+.add{
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    height: 300px;
+}
+
+.add .feed{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    padding-top: 1rem;
+}
+
+.add h4{
+    font-weight: 600;
+}
+
+.add .unilever{
+    display: flex;
+    margin-left: 1rem;
+}
+
+.add .unilever .uni{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+}
+
+.add .unilever img{
+    height: 3rem;
+}
+
+.add .unilever .uni small{
+    color: #666666;
+}
+
+.add .unilever .uni .btn{
+    border-radius: 1rem;
+    padding: 0.3rem;
+    background-color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.add .linkedin2{
+    display: flex;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.add .linkedin2 .lin{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+}
+
+.add .linkedin2 img{
+    height: 3rem;
+}
+
+.add .linkedin2 .lin small{
+    color: #666666;
+}
+
+.add .linkedin2 .lin .btn{
+    border-radius: 1rem;
+    padding: 0.3rem;
+    background-color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.add .shopping{
+    display: flex;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.add .shopping .shop{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+}
+
+.add .shopping img{
+    height: 3rem;
+}
+
+.add .shopping .shop small{
+    color: #666666;
+}
+
+.add .shopping .shop .btn{
+    border-radius: 1rem;
+    padding: 0.3rem;
+    background-color: #ffffff;
+    margin-bottom: 0.5rem;
+}
